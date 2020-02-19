@@ -1,5 +1,6 @@
 .center {
     text-align: center;
+    display: inline-block;
 }
 
 ul {
@@ -22,4 +23,35 @@ p {
 
 .spacing{
     margin-bottom: 20px;
+}
+
+.disp-vert {
+    display: table;
+}
+
+ul.disp-vert li {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+ul.disp-vert li:nth-child(n+2) {
+    padding-left: 60px;
+}
+
+.prof-pic {
+    float: left;
+}
+
+img {
+    min-width: 5%;
+    max-width: 4%;
+    height: auto;
+}
+
+table {
+    padding-left: 40px;
+}
+
+.center h1 {
+    margin-top: 0px;
 }
