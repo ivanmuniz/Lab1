@@ -1,0 +1,25 @@
+.center {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.spacing{
+    margin-bottom: 20px;
+}
