@@ -1,57 +1,124 @@
-.center {
+* {
+    /* Used for considering paddings and borders in width percentages */
+    /* NOTE: Margins are not included */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.header {
     text-align: center;
-    display: inline-block;
+}
+
+img {
+    width: auto;
+    height: 150px;
 }
 
 ul {
     list-style-type: none;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    font-size: 25px;
 }
 
 h4 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 p {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+table {
+    margin: 10px 0;
+    border-collapse: collapse;
+    width: calc(85% - 10px);
+}
+
+td, th {
+    padding: 10px 35px;
+    text-align: center;
 }
 
 .spacing{
     margin-bottom: 20px;
 }
 
-.disp-vert {
-    display: table;
+.mobile {
+    column-count: 2;
+    list-style-type: circle;
 }
 
-ul.disp-vert li {
-    vertical-align: middle;
-    display: table-cell;
+.mobile li {
+    padding: 5px 0;
 }
 
-ul.disp-vert li:nth-child(n+2) {
-    padding-left: 60px;
+
+/* Mediano */
+@media (min-width: 600px) and (max-width: 990px) {
+    .disp-vert {
+        display: table;
+    }   
+
+    ul.disp-vert li {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    ul.disp-vert li:nth-child(n+2) {
+        padding-left: 60px;
+    }
+
+    table {
+        margin: 10px 0px 10px 10px;
+    }
+
+
 }
 
-.prof-pic {
-    float: left;
-}
+/* Grande */
+@media (min-width: 991px) {
 
-img {
-    min-width: 5%;
-    max-width: 4%;
-    height: auto;
-}
+    body {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-table {
-    padding-left: 40px;
-}
+    .disp-vert {
+        display: table;
+    }   
 
-.center h1 {
-    margin-top: 0px;
+    ul.disp-vert li {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    ul.disp-vert li:nth-child(n+2) {
+        padding-left: 60px;
+    }
+
+    .header {
+        overflow: auto;
+    }
+
+    img {
+        float: left;
+    }
+
+    table {
+        margin: 10px 0px 10px 40px;
+    }
+
+    td, th {
+        padding: 5px 0px;
+        text-align: left;
+    }
 }
